@@ -10,7 +10,13 @@
 
         .container {
             display: grid;
+
+            /* Explicit grid */
+            grid-template-rows: 50%;
             grid-template-columns: 25% 50% 25%;
+
+            /* rows / columns */
+            grid-template: 50% / 25% 50% 25%;
         }
 
         .item {
