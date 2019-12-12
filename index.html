@@ -14,13 +14,11 @@
             /* Explicit grid */
             grid-template-rows: 50%;
             grid-template-columns: 25% 50% 25%;
-
             /* rows / columns */
-            grid-template: 50% / 25% 50% 25%;
+            grid-template: 50% / auto 2fr 1fr;
 
             grid-column-gap: 30px;
             grid-row-gap: 30px;
-
             grid-gap: 50px 50px;
         }
 
@@ -38,8 +36,10 @@
             display: inline-grid;
             */
             display: grid;
-            grid-template: 50% / 25% 50% 25%;
+            /* grid-template: 50% / repeat(4, 1fr); */
+            grid-template: 50% / repeat(4, minmax(200px, 1fr));
         }
+
 
     </style>
 </head>
