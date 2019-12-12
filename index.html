@@ -25,6 +25,17 @@
             border: 1px solid red;
         }
 
+        .item:nth-of-type(4) {
+            background-color: grey;
+            /*
+            In the future, will go inherit grid properties from father
+            display: subgrid;
+            display: inline-grid;
+            */
+            display: grid;
+            grid-template: 50% / 25% 50% 25%;
+        }
+
     </style>
 </head>
 <body>
@@ -33,7 +44,13 @@
     <div class="item">content #1</div>
     <div class="item">content #2</div>
     <div class="item">content #3</div>
-    <div class="item">content #4</div>
+    <div class="item">
+        <div class="item">subitem #1</div>
+        <div class="item">subitem #2</div>
+        <div class="item">subitem #3</div>
+        <div class="item">subitem #4</div>
+        <div class="item">subitem #5</div>
+    </div>
     <div class="item">content #5</div>
     <div class="item">content #6</div>
     <div class="item">content #7</div>
