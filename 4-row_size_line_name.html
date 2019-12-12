@@ -18,6 +18,18 @@
             grid-gap: 5px;
 
             /*
+            Horizontal
+            justify-content: center;
+            */
+            justify-items: end;
+
+
+            /*
+            vertical
+            */
+            align-items: start;
+            align-content: center;
+            /*
             For implicit grid size
 
             grid-auto-flow: row;
@@ -52,6 +64,11 @@
             grid-column: 6 / span 2; */
             grid-column: line6 / end;
         }
+
+        .item:nth-of-type(5) {
+            align-self: center;
+            justify-self: center;
+        }
     </style>
 </head>
 <body>
@@ -61,6 +78,13 @@
     <div class="item">item #3</div>
     <div class="item">item #4</div>
     <div class="item">item #5</div>
+    <div class="item">item #6</div>
+    <div class="item">item #7</div>
+    <div class="item">item #8</div>
+    <div class="item">item #9</div>
+    <div class="item">item #10</div>
+    <div class="item">item #11</div>
+    <div class="item">item #12</div>
 </section>
 
 </body>
